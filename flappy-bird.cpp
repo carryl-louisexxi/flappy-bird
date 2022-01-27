@@ -19,7 +19,8 @@ void Setup()
     BirdY=14;
 
 }
-void Draw()
+
+void Draw() // Drawing bird
 {
     system("cls");
     for(i=0; i<Mapwidth+2; i++)
@@ -50,7 +51,8 @@ void Draw()
         cout<<"#";
         cout<<endl;
 }
-void Input()
+
+void Input() // Input of the Player
 {
     if(_kbhit)
     {
@@ -67,7 +69,8 @@ void Input()
 
 
 }
-void Logic()
+
+void Logic() // Logic of the game
 {
     switch(dir)
     {
@@ -76,8 +79,6 @@ void Logic()
         BirdY--;
         break;
     }
-
-
 }
 
 
